@@ -25,3 +25,4 @@
     * https://it.mathworks.com/help/pdf_doc/wavelet/wavelet_ug.pdf
     * https://it.mathworks.com/help/pdf_doc/wavelet/wavelet_ref.pdf
     * https://it.mathworks.com/help/pdf_doc/wavelet/wavelet_gs.pdf
+  * https://www.dsprelated.com/freebooks/sasp/Wavelet_Filter_Banks.html
