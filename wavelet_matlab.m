@@ -42,11 +42,11 @@ for curr_level=1:number_of_scales
     col=ceil(number_of_scales/raw);
     h_s(curr_level)=subplot(raw,col,curr_level);
     plot(real(wt(curr_level,:)))
-    title(['level: ' num2str(curr_level) ' f: ' num2str(f(curr_level))])
+    title(['level: ' num2str(curr_level) ' f: ' num2str(f(curr_level)) ' Hz'])
 end
 linkaxes(h_s,'xy')
 
-%% plot 
+%% plot One side PSD
 figure
 for curr_level=1:size(wt,1)
     raw=ceil(sqrt(size(wt,1)));
@@ -54,10 +54,14 @@ for curr_level=1:size(wt,1)
     h_fft(curr_level)=subplot(raw,col,curr_level);
     %     plot(hz,2*abs(fft(wt(curr_level,:)/length(wt(curr_level,:)))))
     x=real(wt(curr_level,:))';
-    yf=abs(fft(x(:,1)));
-    yf=yf(1:end/2);
-    xf =linspace(0,fs/2,numel(yf));
-    plot(xf,yf)
-    title(['level: ' num2str(curr_level) ' f: ' num2str(f(curr_level))])
+    L=length(x);
+    NFFT=1024;
+    X=fft(x,NFFT);
+    Px=X.*conj(X)/(NFFT*L); %Power of each freq components
+    fVals=fs*(0:NFFT/2-1)/NFFT;
+    plot(fVals,Px(1:NFFT/2),'b','LineSmoothing','on','LineWidth',1);
+    xlabel('Frequency (Hz)')
+    ylabel('PSD');
+    title(['level: ' num2str(curr_level) ' f: ' num2str(f(curr_level)) ' Hz'])
 end
 linkaxes(h_fft,'xy')
