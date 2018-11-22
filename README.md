@@ -14,6 +14,11 @@ Lot of resources can be found online (but different formulas, different names fo
 
 
 * wavelet_matlab just to test how the cwt works (Wavelet Toolbox needed)
+* comparing_morlet_formulas is a comparison between cmorwavf and the one present in:
+  * Tallon-Baudry, Catherine, et al. "Stimulus specificity of phase-locked and non-phase-locked 40 Hz visual responses in human." Journal of Neuroscience 16.13 (1996): 4240-4249. Link: 
+    * http://www.jneurosci.org/content/jneuro/16/13/4240.full.pdf
+  * Hipp, Joerg F., et al. "Large-scale cortical correlation structure of spontaneous oscillatory activity." Nature neuroscience 15.6 (2012): 884. Link:
+    * https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3861400/
 
 ## Other resources:
   * Mike X Cohen:
