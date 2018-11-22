@@ -1,4 +1,4 @@
-# understanding Morlet wavelet
+Understanding the Morlet wavelet
 Lot of resources can be found online (but different formulas, different names for the same parameter etc..). 
 
 ## Code
