@@ -32,4 +32,4 @@
     * Computational Signal Processing with Wavelets (the one on which Matlab complex Morlet formula is based) https://books.google.it/books?id=SMngBwAAQBAJ&lpg=PA66&vq=morlet&hl=it&pg=PA66#v=onepage&q&f=false
     * The Illustrated Wavelet Transform Handbook: Introductory Theory and Applications in Science: https://books.google.it/books?id=VrTZDQAAQBAJ&lpg=PP1&dq=The%20Illustrated%20Wavelet%20Transform%20Handbook%3A%20Introductory%20Theory%20and%20Applications%20in%20Science&hl=it&pg=PP1#v=onepage&q=5.83&f=false. Page 35
   * A Tutorial of the Morlet Wavelet Transform  http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=924D894AEBCA3A939CC1297FF28B1BA4?doi=10.1.1.695.137&rep=rep1&type=pdf
-  * Wavelet Transforms in Time Series Analysis: https://www.atmos.umd.edu/~ekalnay/syllabi/AOSC630/Wavelets_2010.pdf
+  * Wavelet Transforms in Time Series Analysis: https://www.atmos.umd.edu/~ekalnay/syllabi/AOSC630/Wavelets_2010.pdf Nice and simple explanation of wavelet in general and Morlet in particular. 
