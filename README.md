@@ -1,4 +1,5 @@
-# understanding_wavelets
+# understanding Morlet wavelet
+Lot of resources can be found online (but different formulas, different names for the same parameter etc..). 
 
 * invcwt_v1.4:
   * Wavelet software was provided by C. Torrence and G. Compo, and is available at URL:    http://paos.colorado.edu/research/wavelets/''. Reference: Torrence, C. and G. P. Compo, 1998: A Practical Guide to Wavelet   Analysis. <I>Bull. Amer. Meteor. Soc.</I>, 79, 61-78. paper: http://paos.colorado.edu/research/wavelets/bams_79_01_0061.pdf
