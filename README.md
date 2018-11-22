@@ -14,6 +14,8 @@ Lot of resources can be found online (but different formulas, different names fo
 
 
 * wavelet_matlab just to test how the cwt works (Wavelet Toolbox needed)
+* comparing_morlet_formulas is a comparison between cmorwavf and the one present in:
+  Tallon-Baudry, Catherine, et al. "Stimulus specificity of phase-locked and non-phase-locked 40 Hz visual responses in human." Journal of Neuroscience 16.13 (1996): 4240-4249.
 
 ## Other resources:
   * Mike X Cohen:
