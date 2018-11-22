@@ -17,6 +17,7 @@
   * Mike X Cohen:
     * refer to: http://mikexcohen.com/lectures.html for a detailed and clear description of wavelets (matlab code is also available there and here:
       * https://github.com/vncntprvst/tools/tree/master/AnalyzingNeuralTimeSeriesData
+    * New paper: https://www.biorxiv.org/content/biorxiv/early/2018/08/21/397182.full.pdf
   * National:
     * http://zone.ni.com/reference/en-XX/help/372656C-01/lvasptconcepts/wa_awt/
   * Mathworks:
