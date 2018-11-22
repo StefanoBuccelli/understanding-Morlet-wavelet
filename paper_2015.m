@@ -1,5 +1,5 @@
 
-%% Computational implementation of the inverse continuous wavelet transform without a requirement of the admissibility conditionclear
+%% From: Computational implementation of the inverse continuous wavelet transform without a requirement of the admissibility conditionclear
 clc
 
 % Determination of the function
