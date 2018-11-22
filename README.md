@@ -17,7 +17,8 @@
   * https://github.com/vncntprvst/tools/tree/master/AnalyzingNeuralTimeSeriesData
 
 * Other resources:
-  * http://zone.ni.com/reference/en-XX/help/372656C-01/lvasptconcepts/wa_awt/
+  * National:
+    * http://zone.ni.com/reference/en-XX/help/372656C-01/lvasptconcepts/wa_awt/
   * Mathworks:
     * https://it.mathworks.com/help/wavelet/gs/choose-a-wavelet.html
     * https://it.mathworks.com/help/pdf_doc/wavelet/wavelet_ug.pdf
