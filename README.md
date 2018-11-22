@@ -13,8 +13,6 @@
 
 * wavelet_matlab just to test how the cwt works (Wavelet Toolbox needed)
 
-* 
-
 * Other resources:
   * Mike X Cohen:
     * refer to: http://mikexcohen.com/lectures.html for a detailed and clear description of wavelets (matlab code is also available there and here:
