@@ -1,3 +1,6 @@
+%% Warning: cwt changed from R.2018, this script only works from R.2018a
+
+%%
 clear
 clc
 close all
@@ -11,7 +14,7 @@ Fc=20;
 x=cos(2*pi*Fc*t)';
 
 %% perform Analytic Morlet Wavelet with different parameters
-[wt,f,coi,fb] = cwt(x,'amor',fs,'VoicesPerOctave',4,'FrequencyLimits',[2^(-.5) 64]);
+[wt,f,coi,fb] = cwt(x,'amor',fs,'VoicesPerOctave',4,'FrequencyLimits',[2^(-.5) 64]); % 'FrequencyLimits',[2^(-.5) 64] works only from R.2018
 xrec=icwt(wt,'amor',f,[0.8 64]);
 
 %% comparing the original and the reconstructed signals
