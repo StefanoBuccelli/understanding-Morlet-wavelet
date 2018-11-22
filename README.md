@@ -12,3 +12,6 @@
 
 
 * wavelet_matlab just to test how the cwt works (Wavelet Toolbox needed)
+
+* refer to: http://mikexcohen.com/lectures.html for a detailed and clear description of wavelets (matlab code is also available there and here:
+  * https://github.com/vncntprvst/tools/tree/master/AnalyzingNeuralTimeSeriesData
