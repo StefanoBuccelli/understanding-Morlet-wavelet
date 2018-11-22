@@ -1,6 +1,8 @@
 # understanding_wavelets
 
-* invcwt_v1.4 found here: https://it.mathworks.com/matlabcentral/fileexchange/20821-continuous-wavelet-transform-and-inverse
+* invcwt_v1.4:
+  * Wavelet software was provided by C. Torrence and G. Compo, and is available at URL:    http://paos.colorado.edu/research/wavelets/''. Reference: Torrence, C. and G. P. Compo, 1998: A Practical Guide to Wavelet   Analysis. <I>Bull. Amer. Meteor. Soc.</I>, 79, 61-78.
+ * found here: https://it.mathworks.com/matlabcentral/fileexchange/20821-continuous-wavelet-transform-and-inverse
 
 
 * paper 2015: 
