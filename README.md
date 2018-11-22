@@ -27,6 +27,6 @@
     * https://it.mathworks.com/help/pdf_doc/wavelet/wavelet_gs.pdf
   * Web pages:
     * https://www.dsprelated.com/freebooks/sasp/Wavelet_Filter_Banks.html
-    * https://ccrma.stanford.edu/~jos/sasp/Continuous_Wavelet_Transform.html
+    * https://ccrma.stanford.edu/~jos/sasp/Continuous_Wavelet_Transform.html : "The center frequency is typically chosen so that second peak is half of first approx = 5.336. In this case psi(0) almost zero: which is close enough to zero-mean for most practical purposes"
   * Books: 
     * The Illustrated Wavelet Transform Handbook: Introductory Theory and Applications in Science: https://books.google.it/books?id=VrTZDQAAQBAJ&lpg=PP1&dq=The%20Illustrated%20Wavelet%20Transform%20Handbook%3A%20Introductory%20Theory%20and%20Applications%20in%20Science&hl=it&pg=PP1#v=onepage&q=5.83&f=false
