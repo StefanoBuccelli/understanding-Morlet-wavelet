@@ -14,6 +14,29 @@ x=cos(2*pi*Fc*t)';
 [wt,f,coi,fb] = cwt(x,'amor',fs,'VoicesPerOctave',4,'FrequencyLimits',[2^(-.5) 64]);
 xrec=icwt(wt,'amor',f,[0.8 64]);
 
+%% check fiter bank used
+freqz(fb)
+title('Frequency Responses Morlet Wavelet')
+
+[psi, t] = wavelets(fb); % wavelets used by cwt
+% load('/Users/stefanobuccelli/Desktop/cmw_tot.mat')
+% cmw_tot=flipud(cmw_tot); % flip in order to match the order of f from cwt
+%% plot wavelets
+number_of_scales=length(f);
+figure
+
+for curr_level=1:number_of_scales
+    raw=ceil(sqrt(size(wt,1)));
+    col=ceil(number_of_scales/raw);
+    h_s(curr_level)=subplot(raw,col,curr_level);
+    plot(t,real(psi(curr_level,:)))
+%     % only if you have cmw_tot as obtained by wavelet_RI_hipp
+%     hold on
+%     plot(-5:1/fs:5,cmw_tot(curr_level,:))
+    title(['level: ' num2str(curr_level) ' f: ' num2str(f(curr_level)) ' Hz'])
+end
+linkaxes(h_s,'x')
+
 %% comparing the original and the reconstructed signals
 figure
 subplot(311)
