@@ -7,6 +7,7 @@ curr_freq=frequencies(10);
 sigmaf = curr_freq./7;  %  7 as Tallon-Baudry et al,
 sigmat_TANNON = 1./(sigmaf) * (1./(2*pi)); 
 sigmat_MATLAB = 1./(sigmaf) * (1./sqrt(2));  % as in Tallon. NOT SURE IT'S ALWAYS TRUE
+sigmaf_matlab=1./(sigmat_TANNON) * (1./sqrt(2));
 % help cwt in maxScale you can read:
 % The standard deviation of the Morse wavelet in time, ? is approximately 
 % where P is the time-bandwidth product. The standard deviation in frequency, ?
@@ -30,17 +31,17 @@ Ub = +3*sigmat_MATLAB;
 time_support = Lb:1/fs:Ub; % 
 
 %% Formula from: Tallon-Baudry, Catherine, et al. "Stimulus specificity of phase-locked and non-phase-locked 40 Hz visual responses in human." Journal of Neuroscience 16.13 (1996): 4240-4249.
-wavelet_Tannon = (sqrt(pi)*sigmat_MATLAB).^(-0.5) * exp(2*pi*1i*curr_freq.*time_support) .* exp(-time_support.^2./(2*sigmat_MATLAB^2));   
+wavelet_Tannon = (sqrt(pi)*sigmat_TANNON).^(-0.5) * exp(2*pi*1i*curr_freq.*time_support) .* exp(-time_support.^2./(2*sigmat_TANNON^2));   
 
 %% Formula used in cmorwavf and taken from: Computational Signal Processing with Wavelets
-wavelet_cmorwavf = ((pi*(1/sigmaf.^2)).^(-0.5)) * exp(2*pi*1i*curr_freq.*time_support) .* exp(-(time_support.^2)*(sigmaf^2)); %% this matches matlab!
+wavelet_cmorwavf = ((pi*(1/sigmaf_matlab.^2)).^(-0.5)) * exp(2*pi*1i*curr_freq.*time_support) .* exp(-(time_support.^2)*(sigmaf_matlab^2)); %% this matches matlab!
 
 %% Modified version of Matlab equation to match Tannon's formula. sqrt(2*pi*(A)) and 2*pi^2 inside the exp of the Gaussian
 wavelet_matlab_modified = sqrt(2*pi*((pi*(1/sigmaf.^2)).^(-0.5))) * exp(2*pi*1i*curr_freq.*time_support) .* exp(-(time_support.^2)*(sigmaf^2)*2*pi^2); 
 
 %%  matlab coefficients
 N = length(wavelet_Tannon);
-fb = 1/(sigmaf^2);
+fb = 1/(sigmaf_matlab^2);
 fc = curr_freq;
 [psi_from_cmorwavf,x] = cmorwavf(Lb,Ub,N,fb,fc);
 
