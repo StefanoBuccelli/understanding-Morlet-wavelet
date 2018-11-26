@@ -53,9 +53,16 @@ plot(time_support,real(psi_from_cmorwavf),'b.')
 hold on
 plot(time_support,real(wavelet_Tannon),'r')
 plot(time_support,100*real(psi_cwt(18,:)),'k')% the order is reversed 27-9
-legend({'matlab cmorwavf','tannon'})
+legend({'matlab cmorwavf','tannon','cwt(18)*100'})
 subplot(212)
 plot(time_support,real(psi_from_cmorwavf)-real(wavelet_Tannon))
 title('Difference cmowravf-tannon')
+
+%% still to clarify:
+%% time_support and x are different (understand why)
+%%
+
+
+
 
 
