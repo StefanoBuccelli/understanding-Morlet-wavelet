@@ -21,6 +21,7 @@ Lot of resources can be found online (but different formulas, different names fo
     * https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3861400/
 
 ## Other resources:
+  *  The Uncertainty Principle & Time-Bandwidth Product: https://www.ee.iitb.ac.in/uma/~pawar/Wavelet%20Applications/Chapters_review/ch03_Gr3_Gr2.pdf
   * Mike X Cohen:
     * refer to: http://mikexcohen.com/lectures.html for a detailed and clear description of wavelets (matlab code is also available there and here:
       * https://github.com/vncntprvst/tools/tree/master/AnalyzingNeuralTimeSeriesData
