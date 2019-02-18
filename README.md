@@ -21,7 +21,8 @@ Lot of resources can be found online (but different formulas, different names fo
     * https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3861400/
 
 ## Other resources:
-  *  The Uncertainty Principle & Time-Bandwidth Product: https://www.ee.iitb.ac.in/uma/~pawar/Wavelet%20Applications/Chapters_review/ch03_Gr3_Gr2.pdf
+  *  Lilly, J. M. jLab: A data analysis package for Matlab, version 1.6.2. 2016. http://www.jmlilly.net/jmlsoft.html. 
+  * The Uncertainty Principle & Time-Bandwidth Product: https://www.ee.iitb.ac.in/uma/~pawar/Wavelet%20Applications/Chapters_review/ch03_Gr3_Gr2.pdf
   * Higher-Order Properties of Analytic Wavelets: referred by cwt Matlab help (explains the different normalization (L1) instead of (L2). May be why we have such a discrepancy between Tannon and Matlab?
   https://arxiv.org/pdf/0802.2377.pdf
   * Mike X Cohen:
