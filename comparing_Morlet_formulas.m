@@ -1,9 +1,31 @@
+%% the aim of this script is to compare different formulas of the morlet wavelet
+% 1) from Tannon-Baudry: 
+% 2) from Matlab cmorwavf (Complex Morlet wavelet):
 clear
 clc
+close all
+
+%%
 fs=250; %Hz
 frequencies = 2.^(-0.5:1/4:6);  
 curr_freq=frequencies(10);
 
+%% From Lilly 2009 
+v=curr_freq;
+v_tilde=v/omega_v;
+omega_v=sqrt(-log(1-v_tilde)/v_tilde); % need to numerically solve this
+
+a_v=2*(omega_v/v)*exp((1/2)*(omega_v-v));
+psi_v=a_v*exp(-(1/2).*(t.^2)).*(exp(1i*v*t) - exp(-(1/2)*(v^2))); % from Lilly 2009
+% v is the carrier wave frequency
+
+% omega_v is the peak frequency at which the frequency domain wavelet
+% obtain its maximum value, which is not the same as the carrier frequency
+% v
+
+% a_v is the normalization coefficient
+
+%% 
 sigmaf = curr_freq./7;  %  7 as Tallon-Baudry et al,
 sigmat_TANNON = 1./(sigmaf) * (1./(2*pi)); 
 sigmat_MATLAB = 1./(sigmaf) * (1./sqrt(2));  % as in Tallon. NOT SURE IT'S ALWAYS TRUE
