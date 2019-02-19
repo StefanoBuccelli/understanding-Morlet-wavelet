@@ -19,6 +19,7 @@ Lot of resources can be found online (but different formulas, different names fo
     * http://www.jneurosci.org/content/jneuro/16/13/4240.full.pdf
   * Hipp, Joerg F., et al. "Large-scale cortical correlation structure of spontaneous oscillatory activity." Nature neuroscience 15.6 (2012): 884. Link:
     * https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3861400/
+  * Both refers to this original aricle for the wavelet definition: Analysis of sound patterns through wavelet transforms https://www.researchgate.net/profile/Richard_Kronland-Martinet/publication/263794237_Analysis_of_sound_patterns_through_wavelet_transforms/links/53ece4d40cf26b9b7dbff7a6/Analysis-of-sound-patterns-through-wavelet-transforms.pdf
 
 ## Other resources:
   *  Lilly, J. M. jLab: A data analysis package for Matlab, version 1.6.2. 2016. http://www.jmlilly.net/jmlsoft.html. 
